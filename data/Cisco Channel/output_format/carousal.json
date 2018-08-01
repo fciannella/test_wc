@@ -1,0 +1,176 @@
+{"carousal":[
+{
+	"navigationLinks" : [
+	  {
+		 "label" : "Get Started",
+		 "url" : "http:cisco.lookbookhq.com/amp-for-endpoints-getting-started-guide/tour?utm_campaign=AMP-for-Endpoints&utm_content=&utm_medium=Owned&utm_source=Cisco.com",
+		 "phase" : 1,
+		 "description" : "Learn how to set up and configure your AMP for Endpoints.",
+		 "phaseLabel" : "Get Started"
+	  },
+	  {
+		 "label" : "AMP for Endpoints Console",
+		 "url" : "http://console.amp.cisco.com/",
+		 "phase" : 1,
+		 "description" : "Log in to your AMP for Endpoints management console.",
+		 "phaseLabel" : "Get Started"
+	  }
+	]
+},
+{
+   "navigationLinks" : [
+	  {
+		 "label" : "Get your Deployment Strategy Guide",
+		 "url" : "http://cisco.lookbookhq.com/amp-for-endpoints-getting-started-guide/StrategyGuide?utm_campaign=AMP-for-Endpoints&utm_content=&utm_medium=Owned&utm_source=Cisco.com",
+		 "phase" : 2,
+		 "description" : "Review system requirements, best practices, and troubleshooting strategies.",
+		 "phaseLabel" : "Deployment Strategy Guide"
+	  },
+	  {
+		 "label" : "AMP for Endpoints Console",
+		 "url" : "http://console.amp.cisco.com/",
+		 "phase" : 2,
+		 "description" : "Log in to your AMP for Endpoints management console.",
+		 "phaseLabel" : "Deployment Strategy Guide"
+	  }
+   ]
+},
+{
+"navigationLinks" : [
+  {
+	 "label" : "Enroll in AMP training",
+	 "url" : "http://cisco.lookbookhq.com/amp-for-endpoints-getting-started-guide/expert?utm_campaign=AMP-for-Endpoints&utm_content=&utm_medium=Owned&utm_source=Cisco.com",
+	 "phase" : 3,
+	 "description" : "Get insight into attackers, modern threats, and security trends. Apply this knowledge in real-world\nscenarios and get a detailed walkthrough of remediating infections with your AMP for Endpoints,\nincluding deployment, troubleshooting and best practices in a three-day virtual, instructor-led course.",
+	 "phaseLabel" : "Enroll in AMP training"
+  },
+  {
+	 "label" : "AMP for Endpoints Console",
+	 "url" : "http://console.amp.cisco.com/",
+	 "phase" : 3,
+	 "description" : "Log in to your AMP for Endpoints management console.",
+	 "phaseLabel" : "Enroll in AMP training"
+  }
+]
+},
+{
+   "navigationLinks" : [
+	  {
+		 "label" : "CTA Activation: Review Configuration",
+		 "url" : "http://cisco.lookbookhq.com/c/en-us-amp-cta-demo?x=RGBp9R?utm_campaign=AMP-for-Endpoints&utm_content=&utm_medium=Owned&utm_source=Cisco.com",
+		 "phase" : 4,
+		 "description" : "<p>It looks like you have added proxy device account(s) in CTA, but your proxies do not appear to be uploading any logs. Review the log export configuration of your proxies.<br><br/><strong>To finish the activation:</strong><br/>• Log in to your AMP for Endpoints management console<br/>• Configure web access log export from your respective web proxies.<br/>• Please review the configuration manual  that applies to your proxy in the CTA Getting Started Guide.</p>",
+		 "phaseLabel" : "Enable Cognitive Threat Analytics"
+	  },
+	  {
+		 "label" : "AMP for Endpoints Console",
+		 "url" : "http://console.amp.cisco.com/",
+		 "phase" : 4,
+		 "description" : "Log in to your AMP for Endpoints management console.",
+		 "phaseLabel" : "Enable Cognitive Threat Analytics"
+	  }
+   ]
+},
+{
+"navigationLinks" : [
+  {
+	 "label" : "CTA Activation: Enable Proxy",
+	 "url" : "http://cisco.lookbookhq.com/c/en-us-amp-cta-demo?x=RGBp9R?utm_campaign=AMP-for-Endpoints&utm_content=&utm_medium=Owned&utm_source=Cisco.com",
+	 "phase" : 4,
+	 "description" : "<p style='margin-top:5px;'> <strong>To complete the activation: </strong><br/>• Log in to your AMP for Endpoints management console <br/>• Click the \"Configure\" button in the CTA section of your Accounts > Business page to finalize your configuration of CTA capability. <br/>• You will need to add a device account per each one of your physical or virtual web proxies.<br/>• Please review the configuration manual that applies to your proxy in the CTA Getting Started Guide. </p>",
+	 "phaseLabel" : "Enable Cognitive Threat Analytics"
+  },
+  {
+	 "label" : "AMP for Endpoints Console",
+	 "url" : "http://console.amp.cisco.com/",
+	 "phase" : 4,
+	 "description" : "Log in to your AMP for Endpoints management console.",
+	 "phaseLabel" : "Enable Cognitive Threat Analytics"
+  }
+]
+},
+{
+   "navigationLinks" : [
+	  {
+		 "label" : "CTA Activation: Configuration Error",
+		 "url" : "http://cisco.lookbookhq.com/c/en-us-amp-cta-demo?x=RGBp9R?utm_campaign=AMP-for-Endpoints&utm_content=&utm_medium=Owned&utm_source=Cisco.com",
+		 "phase" : 4,
+		 "description" : "It seems that one of your proxies is not configured properly, and some of the exported logs can’t be processed by CTA. Please review your configuration manual in the CTA Getting Started Guide. If you can’t identify any configuration issues, reach out to the Technical Assistance Center for further assistance using CTA within your AMP for Endpoints. When you open your case, report that your CTA provisioning recordings show your proxy logs are not processed correctly and request a CTA level 3 support for resolution. ",
+		 "phaseLabel" : "Enable Cognitive Threat Analytics"
+	  },
+	  {
+		 "label" : "AMP for Endpoints Console",
+		 "url" : "http://console.amp.cisco.com/",
+		 "phase" : 4,
+		 "description" : "Log in to your AMP for Endpoints management console.",
+		 "phaseLabel" : "Enable Cognitive Threat Analytics"
+	  }
+   ]
+},
+{
+   "navigationLinks" : [
+	  {
+		 "label" : "Get Started",
+		 "url" : "http:cisco.lookbookhq.com/amp-for-endpoints-getting-started-guide/tour?utm_campaign=AMP-for-Endpoints&utm_content=&utm_medium=Owned&utm_source=Cisco.com",
+		 "phase" : 1,
+		 "description" : "Learn how to set up and configure your AMP for Endpoints.",
+		 "phaseLabel" : "Get Started"
+	  },
+	  {
+		 "label" : "Get your Deployment Strategy Guide",
+		 "url" : "http://cisco.lookbookhq.com/amp-for-endpoints-getting-started-guide/StrategyGuide?utm_campaign=AMP-for-Endpoints&utm_content=&utm_medium=Owned&utm_source=Cisco.com",
+		 "phase" : 1,
+		 "description" : "Review system requirements, best practices, and troubleshooting strategies.",
+		 "phaseLabel" : "Get Started"
+	  },
+	  {
+		 "label" : "AMP for Endpoints Console",
+		 "url" : "http://console.amp.cisco.com/",
+		 "phase" : 1,
+		 "description" : "Log in to your AMP for Endpoints management console.",
+		 "phaseLabel" : "Get Started"
+	  }
+   ]
+},
+{
+   "navigationLinks" : [
+	  {
+		 "label" : "Enable Cognitive Threat Analytics",
+		 "url" : "http://cisco.lookbookhq.com/c/en-us-amp-cta-demo?x=RGBp9R?utm_campaign=AMP-for-Endpoints&utm_content=&utm_medium=Owned&utm_source=Cisco.com",
+		 "phase" : 4,
+		 "description" : "Discover new threat categories and see more malware than ever before, even in devices where you cannot install an AMP for Endpoints connector. Activate Cisco Cognitive Threat Analytics (CTA) in your AMP for Endpoints to enable agentless detection.",
+		 "phaseLabel" : "Enable Cognitive Threat Analytics"
+	  },
+	  {
+		 "label" : "AMP for Endpoints Console",
+		 "url" : "http://console.amp.cisco.com/",
+		 "phase" : 4,
+		 "description" : "Log in to your AMP for Endpoints management console.",
+		 "phaseLabel" : "Enable Cognitive Threat Analytics"
+	  }
+   ]
+},
+{
+   "navigationLinks" : [
+	  {
+		 "label" : "Watch feature demos",
+		 "url" : "http://cisco.lookbookhq.com/en-us-amp-for-endpoints-feature-focus/better-visibility?utm_campaign=AMP-for-Endpoints&utm_content=&utm_medium=Owned&utm_source=Cisco.com",
+		 "phase" : 5,
+		 "description" : "Learn how to use continuous analysis, retrospective security, detections and quarantines, and more to get better visibility and control of your endpoints.",
+		 "phaseLabel" : "Feature Focus: Visibility and Control"
+	  },
+	  {
+		 "label" : "AMP for Endpoints Console",
+		 "url" : "http://console.amp.cisco.com/",
+		 "phase" : 5,
+		 "description" : "Log in to your AMP for Endpoints management console.",
+		 "phaseLabel" : "Feature Focus: Visibility and Control"
+	  }
+   ]
+},
+{ "key" : "phase1", "value" : "Get Started" },
+{ "key" : "phase2", "value" : "Deployment Strategy Guide" },
+{ "key" : "phase3", "value" : "Enroll in AMP Training" },
+{ "key" : "phase4", "value" : "Enable Cognitive Threat Analytics" },
+{ "key" : "phase5", "value" : "Feature Focus: Visibility and Control" }
+]}

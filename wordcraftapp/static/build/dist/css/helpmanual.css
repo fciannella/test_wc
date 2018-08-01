@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+.helperContent html, body .helperContent, .helperContent div, .helperContent   span, .helperContent   applet, .helperContent   object, .helperContent   iframe, .helperContent
+h1, .helperContent   h2, .helperContent   h3, .helperContent   h4, .helperContent   h5, .helperContent   h6, .helperContent   p, .helperContent   blockquote, .helperContent   pre, .helperContent
+a, .helperContent   abbr, .helperContent   acronym, .helperContent   address, .helperContent   big, .helperContent   cite, .helperContent   code, .helperContent
+del, .helperContent   dfn, .helperContent   em, .helperContent   img, .helperContent   ins, .helperContent   kbd, .helperContent   q, .helperContent   s, .helperContent   samp, .helperContent
+small, .helperContent   strike, .helperContent   strong, .helperContent   sub, .helperContent   sup, .helperContent   tt, .helperContent   var, .helperContent
+b, .helperContent   u, .helperContent   i, .helperContent   center, .helperContent
+dl, .helperContent   dt, .helperContent   dd, .helperContent   ol, .helperContent   ul, .helperContent   li, .helperContent
+fieldset, .helperContent   form, .helperContent   label, .helperContent   legend, .helperContent
+table, .helperContent   caption, .helperContent   tbody, .helperContent   tfoot, .helperContent   thead, .helperContent   tr, .helperContent   th, .helperContent   td, .helperContent
+article, .helperContent   aside, .helperContent   canvas, .helperContent   details, .helperContent   embed, .helperContent
+figure, .helperContent   figcaption, .helperContent   footer, .helperContent   header, .helperContent   hgroup, .helperContent
+menu, .helperContent   nav, .helperContent   output, .helperContent   ruby, .helperContent   section, .helperContent   summary, .helperContent
+time, .helperContent   mark, .helperContent   audio, .helperContent   video{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+.helperContent article, .helperContent   aside, .helperContent   details, .helperContent   figcaption, .helperContent   figure, .helperContent
+footer, .helperContent   header, .helperContent   hgroup, .helperContent   menu, .helperContent   nav, .helperContent   section {
+  display: block;
+}
+ body .helperContent{
+  line-height: 1;
+}
+.helperContent ol, .helperContent   ul {
+  list-style: none;
+}
+.helperContent blockquote, .helperContent   q {
+  quotes: none;
+}
+.helperContent blockquote:before, .helperContent   blockquote:after, .helperContent
+q:before, .helperContent   q:after {
+  content: '';
+  content: none;
+}
+.helperContent table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body .helperContent{
+    background-color: white;
+    font-family: -webkit-body !important;
+}
+
+.helperContent h2 {
+	color: black;
+	font-size: 27px;
+}
+
+.helperContent p {
+	/*position: relative;
+    left: 70px;
+	top: 20px;
+	*/
+	color: black;
+	font-size: 18px;
+	line-height: 140%;
+}
+
+
+/* Heading */
+.helperContent .title {
+	position: relative;
+
+	height: 50px;
+	top: 20px;
+	color: black;
+	background-color: #6e93fb;
+	font-size: 32px;
+}
+
+.helperContent #mainheading {
+	position: relative;
+	padding: 10px 0;
+    margin-left: 20px;
+	color: black;
+	font-size: 32px;
+}
+
+/*Contents*/
+ .helperContent .contents {
+	position: relative;
+
+	top: 20px;
+	color: black;
+	font-size: 18px;
+}
+
+.helperContent .screenshot {
+	position: relative;
+    max-width: 800px;
+    width:100%;
+    margin: auto;
+    text-align: center;
+    display: block;
+	    padding: 20px;
+	color: black;
+	font-size: 32px;
+}
+
+.helperContent .topic {
+	position: relative;
+	padding: 10px 0;
+    margin-left: 0px;
+	color: black;
+	font-size: 27px;
+}
+
+.helperContent .functionlist {
+	position: relative;
+    //margin-left: 320px;
+	top: 20px;
+	color: black;
+	font-size: 18px;
+}
+
+/*Side Panel*/
+.helperContent .leftsidepane {
+	background-color: #2b3443;
+	height: 100%;
+	width:40%;
+	max-width:300px;
+	position: fixed;
+	z-index: 1;
+    left: 0px;
+	top: 0px;
+	color: black;
+	font-size: 18px;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+/* The navigation menu links */
+.helperContent .leftsidepane a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 21px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, .helperContent   change their color */
+.helperContent .leftsidepane a:hover, .helperContent   .offcanvas a:focus{
+    color: #049fd9;
+}
+.helperContent .marginTop{
+	margin-top: 0px !important;
+}
+/* On smaller screens, .helperContent   where height is less than 450px, .helperContent   change the style of the leftsidepane (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .helperContent .leftsidepane {padding-top: 15px;}
+    .helperContent .leftsidepane a {font-size: 18px;}
+}

@@ -1,0 +1,10 @@
+import { EXPORT_NARRATIVE } from '../constants';
+
+export default function(state = {narrative:""}, action) {
+  switch (action.type) {
+    case EXPORT_NARRATIVE:
+        return {rule:action.payload.data.narrative};
+    default:
+        return state;
+    }
+}
