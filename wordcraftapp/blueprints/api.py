@@ -46,46 +46,50 @@ def format_output(chid, ofid, content):
     
     if ofid == 25:
         if "OPENSHIFT_APP_UUID" in os.environ:
-            file = './app-root/repo/data/Cisco Channel/output_format/carousal.json'
+            file = './app-root/repo/data/Cisco Channel/output_format/amp.json'
         else:
-            file = './data/Cisco Channel/output_format/carousal.json'
+            file = './data/Cisco Channel/output_format/amp.json'
     else:
         return jsonify(content)
     
     with open(file) as data_file:
-        carousal_data = json.load(data_file)
+        amp_data = json.load(data_file)
 
     # Mapping WC output to cisco.com AMP format
-    carousal_data["carousal"][0]["navigationLinks"][0]["description"] = content["phase1_get_started"]
-    carousal_data["carousal"][0]["navigationLinks"][1]["description"] = content["phase1_amp_for_endpoints_console"]
-    
-    carousal_data["carousal"][1]["navigationLinks"][0]["description"] = content["phase2_get_your_deployment_strategy_guide"]
-    carousal_data["carousal"][1]["navigationLinks"][1]["description"] = content["phase2_amp_for_endpoints_console"]
-    
-    carousal_data["carousal"][2]["navigationLinks"][0]["description"] = content["phase3_enroll_in_amp_training"]
-    carousal_data["carousal"][2]["navigationLinks"][1]["description"] = content["phase3_amp_for_endpoints_console"]
-    
-    carousal_data["carousal"][3]["navigationLinks"][0]["description"] = content["phase4_cta_activation:_review_configuration"]
-    carousal_data["carousal"][3]["navigationLinks"][1]["description"] = content["phase4_amp_for_endpoints_console"]
-    
-    carousal_data["carousal"][4]["navigationLinks"][0]["description"] = content["phase4_cta_activation:_enable_proxy"]
-    carousal_data["carousal"][4]["navigationLinks"][1]["description"] = content["phase4_amp_for_endpoints_console"]
-    
-    carousal_data["carousal"][5]["navigationLinks"][0]["description"] = content["phase4_cta_activation:_configuration_error"]
-    carousal_data["carousal"][5]["navigationLinks"][1]["description"] = content["phase4_amp_for_endpoints_console"]
-    
-    carousal_data["carousal"][6]["navigationLinks"][0]["description"] = content["phase1_get_started"]
-    carousal_data["carousal"][6]["navigationLinks"][1]["description"] = content["phase1_get_your_deployment_strategy_guide"]
-    carousal_data["carousal"][6]["navigationLinks"][2]["description"] = content["phase1_amp_for_endpoints_console"]
-    
-    carousal_data["carousal"][7]["navigationLinks"][0]["description"] = content["phase4_enable_cognitive_threat_analytics"]
-    carousal_data["carousal"][7]["navigationLinks"][1]["description"] = content["phase4_amp_for_endpoints_console"]
-    
-    carousal_data["carousal"][8]["navigationLinks"][0]["description"] = content["phase5_watch_feature_demos"]
-    carousal_data["carousal"][8]["navigationLinks"][1]["description"] = content["phase5_watch_feature_demos"]
+    # Future optimization: lable determines the content irrespective of the phase. See "AMP for Endpoints Console"
+    #   If the label is the same as WC tags, association becomes easy.
+    for ph in amp_data["customerProductInfo"]["carousal"]:
+        for ph_dict in ph:
+            if ph_dict["phase"] == 1 and ph_dict["label"] == "Get Started":
+                ph_dict["description"] = content["phase1_get_started"]
+            elif ph_dict["phase"] == 1 and ph_dict["label"] == "Get your Deployment Strategy Guide":
+                ph_dict["description"] = content["phase1_get_your_deployment_strategy_guide"]
+            elif ph_dict["phase"] == 1 and ph_dict["label"] == "AMP for Endpoints Console":
+                ph_dict["description"] = content["phase1_amp_for_endpoints_console"]
+            elif ph_dict["phase"] == 2 and ph_dict["label"] == "Get your Deployment Strategy Guide":
+                ph_dict["description"] = content["phase2_get_your_deployment_strategy_guide"]
+            elif ph_dict["phase"] == 2 and ph_dict["label"] == "AMP for Endpoints Console":
+                ph_dict["description"] = content["phase2_amp_for_endpoints_console"]
+            elif ph_dict["phase"] == 3 and ph_dict["label"] == "Enroll in AMP training":
+                ph_dict["description"] = content["phase3_enroll_in_amp_training"]
+            elif ph_dict["phase"] == 3 and ph_dict["label"] == "AMP for Endpoints Console":
+                ph_dict["description"] = content["phase3_amp_for_endpoints_console"]
+            elif ph_dict["phase"] == 4 and ph_dict["label"] == "Enable Cognitive Threat Analytics":
+                ph_dict["description"] = content["phase4_enable_cognitive_threat_analytics"]
+            elif ph_dict["phase"] == 4 and ph_dict["label"] == "AMP for Endpoints Console":
+                ph_dict["description"] = content["phase4_amp_for_endpoints_console"]
+            elif ph_dict["phase"] == 5 and ph_dict["label"] == "Watch feature demos":
+                ph_dict["description"] = content["phase5_watch_feature_demos"]
+            elif ph_dict["phase"] == 5 and ph_dict["label"] == "AMP for Endpoints Console":
+                ph_dict["description"] = content["phase5_amp_for_endpoints_console"]
+
+    if content["phase"] is not None and 1 <= int(content["phase"]) <= 5:
+        amp_data["customerProductInfo"]["navigationLinks"] = amp_data["customerProductInfo"]["carousal"][int(content["phase"])]
+    else:
+        amp_data["navigationLinks"] = []
     
     #print(carousal_data)
-    return carousal_data #jsonify(carousal_data)
+    return amp_data #jsonify(carousal_data)
         
 # Test handle. Returns OK
 @api.route ('/', methods=['GET', 'POST'])
@@ -260,6 +264,21 @@ def content():
         else:
             msg = msg + 'Offer ID not found in request'
             err = True
+        
+        # Check if html email required. Temporary placeholder html
+        if 'html' in request.args:
+            htmlid = int(request.args['html'])
+            if htmlid == 1:
+                if "OPENSHIFT_APP_UUID" in os.environ:
+                    file = './app-root/repo/data/Digital Revolution - Ransomware/template/Cisco_Ransomware_with_Tags.html'
+                    html_file = open(file, 'r', encoding='utf-8')
+                    html_code = html_file.read() 
+                    return html_code
+                else:
+                    file = './data/Digital Revolution - Ransomware/template/Cisco_Ransomware_with_Tags.html'
+                    html_file = open(file, 'r', encoding='utf-8')
+                    html_code = html_file.read() 
+                    return html_code
 
         d = request.get_json (force=True)
         data = d['data']
