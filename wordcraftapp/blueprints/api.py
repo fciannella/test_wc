@@ -84,7 +84,7 @@ def format_output(chid, ofid, content):
                 ph_dict["description"] = content["phase5_amp_for_endpoints_console"]
 
     if content["phase"] is not None and 1 <= int(content["phase"]) <= 5:
-        amp_data["customerProductInfo"]["navigationLinks"] = amp_data["customerProductInfo"]["carousal"][int(content["phase"])]
+        amp_data["customerProductInfo"]["navigationLinks"] = amp_data["customerProductInfo"]["carousal"][int(content["phase"]) - 1]
     else:
         amp_data["navigationLinks"] = []
     
