@@ -1,0 +1,217 @@
+{
+    "customerProductInfo": {
+        "accountLinks": {
+            "clickToChat": {
+                "label": "Click to Chat",
+                "url": "https://www.cisco.com/"
+            },
+            "emailAccountManager": {
+                "label": "Email Account Manager",
+                "url": "https://www.cisco.com/"
+            },
+            "manageAccountLink": {
+                "label": "Manage Account Link",
+                "url": "https://rpfa.cloudapps.cisco.com/rpfa/profile/edit_pref.do?Tab=4"
+            }
+        },
+        "carousal": [
+            [
+                {
+                    "description": "Learn how to set up and configure your AMP for Endpoints.",
+                    "icon": "ico-video-",
+                    "id_key": null,
+                    "label": "Get Started",
+                    "phase": 1,
+                    "phaseLabel": "Get Started",
+                    "url": "http://cisco.lookbookhq.com/amp-for-endpoints-getting-started-guide/tour?utm_campaign=AMP-for-Endpoints&utm_content=Video&utm_medium=Owned&utm_source=Cisco.com&utm_term=AMP-Product-Page"
+                },
+                {
+                    "description": "Review system requirements, best practices, and troubleshooting strategies.",
+                    "icon": "ico-pdf-",
+                    "id_key": null,
+                    "label": "Get your Deployment Strategy Guide",
+                    "phase": 1,
+                    "phaseLabel": "Get Started",
+                    "url": "http://cisco.lookbookhq.com/amp-for-endpoints-getting-started-guide/StrategyGuide?utm_campaign=AMP-for-Endpoints&utm_content=Guide&utm_medium=Owned&utm_source=Cisco.com&utm_term=AMP-Product-Page"
+                },
+                {
+                    "description": "Log in to your AMP for Endpoints management console.",
+                    "icon": null,
+                    "id_key": null,
+                    "label": "AMP for Endpoints Console",
+                    "phase": 1,
+                    "phaseLabel": "Get Started",
+                    "url": "http://console.amp.cisco.com/"
+                }
+            ],
+            [
+                {
+                    "description": "Review system requirements, best practices, and troubleshooting strategies.",
+                    "icon": "ico-pdf-",
+                    "id_key": null,
+                    "label": "Get your Deployment Strategy Guide",
+                    "phase": 2,
+                    "phaseLabel": "Deployment Strategy Guide",
+                    "url": "http://cisco.lookbookhq.com/amp-for-endpoints-getting-started-guide/StrategyGuide?utm_campaign=AMP-for-Endpoints&utm_content=Guide&utm_medium=Owned&utm_source=Cisco.com&utm_term=AMP-Product-Page"
+                },
+                {
+                    "description": "Log in to your AMP for Endpoints management console.",
+                    "icon": null,
+                    "id_key": null,
+                    "label": "AMP for Endpoints Console",
+                    "phase": 2,
+                    "phaseLabel": "Deployment Strategy Guide",
+                    "url": "http://console.amp.cisco.com/"
+                }
+            ],
+            [
+                {
+                    "description": "Get insight into attackers, modern threats, and security trends. Apply this knowledge in real-world\nscenarios and get a detailed walkthrough of remediating infections with your AMP for Endpoints,\nincluding deployment, troubleshooting and best practices in a three-day virtual, instructor-led course.",
+                    "icon": "ico-web-",
+                    "id_key": null,
+                    "label": "Enroll in AMP training",
+                    "phase": 3,
+                    "phaseLabel": "Enroll in AMP training",
+                    "url": "http://cisco.lookbookhq.com/amp-for-endpoints-getting-started-guide/expert?utm_campaign=AMP-for-Endpoints&utm_content=Webpage&utm_medium=Owned&utm_source=Cisco.com&utm_term=AMP-Product-Page"
+                },
+                {
+                    "description": "Log in to your AMP for Endpoints management console.",
+                    "icon": null,
+                    "id_key": null,
+                    "label": "AMP for Endpoints Console",
+                    "phase": 3,
+                    "phaseLabel": "Enroll in AMP training",
+                    "url": "http://console.amp.cisco.com/"
+                }
+            ],
+            [
+                {
+                    "description": "Discover new threat categories and see more malware than ever before, even in devices where you cannot install an AMP for Endpoints connector. Activate Cisco Cognitive Threat Analytics (CTA) in your AMP for Endpoints to enable agentless detection.",
+                    "icon": "ico-video-",
+                    "id_key": null,
+                    "label": "Enable Cognitive Threat Analytics",
+                    "phase": 4,
+                    "phaseLabel": "Enable Cognitive Threat Analytics",
+                    "url": "http://cisco.lookbookhq.com/amp_cta_activate?utm_campaign=AMP-for-Endpoints&utm_content=Video&utm_medium=Owned&utm_source=Cisco.com&utm_term=AMP-Product-Page"
+                },
+                {
+                    "description": "Log in to your AMP for Endpoints management console.",
+                    "icon": null,
+                    "id_key": null,
+                    "label": "AMP for Endpoints Console",
+                    "phase": 4,
+                    "phaseLabel": "Enable Cognitive Threat Analytics",
+                    "url": "http://console.amp.cisco.com/"
+                }
+            ],
+            [
+                {
+                    "description": "Learn how to use continuous analysis, retrospective security, detections and quarantines, and more to get better visibility and control of your endpoints.",
+                    "icon": "ico-web-",
+                    "id_key": null,
+                    "label": "Watch feature demos",
+                    "phase": 5,
+                    "phaseLabel": "Feature Focus: Visibility and Control",
+                    "url": "http://cisco.lookbookhq.com/en-us-amp-for-endpoints-feature-focus/better-visibility?utm_campaign=AMP-for-Endpoints&utm_content=Webpage&utm_medium=Owned&utm_source=Cisco.com&utm_term=AMP-Product-Page"
+                },
+                {
+                    "description": "Log in to your AMP for Endpoints management console.",
+                    "icon": null,
+                    "id_key": null,
+                    "label": "AMP for Endpoints Console",
+                    "phase": 5,
+                    "phaseLabel": "Feature Focus: Visibility and Control",
+                    "url": "http://console.amp.cisco.com/"
+                }
+            ]
+        ],
+        "contractDetails": {
+            "countryInformation": {
+                "label": "USA",
+                "url": "UNITED STATES"
+            },
+            "customerSuccessManager": {
+                "label": "Moon,Zachary Todd.",
+                "url": "zmoon"
+            },
+            "expirationDays": 372,
+            "licenseCount": "10260.0",
+            "phoneInformation": {
+                "label": "region_phone_no",
+                "url": "833-800-3667"
+            },
+            "regionalInformation": {
+                "label": "AMER",
+                "url": "customersuccess@cisco.com"
+            },
+            "salesAccountManager": {
+                "label": "William R. Dillon",
+                "url": "https://www.cisco.com"
+            },
+            "serviceContractCount": "1",
+            "serviceContractNumber": "95830161",
+            "totalDays": 1094
+        },
+        "navigationLinks": [
+            {
+                "description": "Learn how to use continuous analysis, retrospective security, detections and quarantines, and more to get better visibility and control of your endpoints.",
+                "icon": "ico-web-",
+                "id_key": null,
+                "label": "Watch feature demos",
+                "phase": 5,
+                "phaseLabel": "Feature Focus: Visibility and Control",
+                "url": "http://cisco.lookbookhq.com/en-us-amp-for-endpoints-feature-focus/better-visibility?utm_campaign=AMP-for-Endpoints&utm_content=Webpage&utm_medium=Owned&utm_source=Cisco.com&utm_term=AMP-Product-Page"
+            },
+            {
+                "description": "Log in to your AMP for Endpoints management console.",
+                "icon": null,
+                "id_key": null,
+                "label": "AMP for Endpoints Console",
+                "phase": 5,
+                "phaseLabel": "Feature Focus: Visibility and Control",
+                "url": "http://console.amp.cisco.com/"
+            }
+        ],
+        "offerCode": "AMP4EP",
+        "phaseList": [
+            {
+                "phaseLabel": "Get Started",
+                "phaseNumber": 1
+            },
+            {
+                "phaseLabel": "Deployment Strategy Guide",
+                "phaseNumber": 2
+            },
+            {
+                "phaseLabel": "Enroll in AMP Training",
+                "phaseNumber": 3
+            },
+            {
+                "phaseLabel": "Enable Cognitive Threat Analytics",
+                "phaseNumber": 4
+            },
+            {
+                "phaseLabel": "Feature Focus: Visibility and Control",
+                "phaseNumber": 5
+            }
+        ],
+        "renewCTA": {
+            "accountNumber": "CH ROBINSON WORLDWIDE",
+            "contractInfo": [],
+            "contractInfos": [
+                {
+                    "contractEndDt": "8/10/2019",
+                    "contractNumber": "95830161",
+                    "contractStartDt": "8/11/2016",
+                    "days": "372",
+                    "deviceCounts": 1,
+                    "productId": "ELA-SEC-NEW-C4",
+                    "serialNo": ""
+                }
+            ],
+            "country": "USA",
+            "savId": ""
+        },
+        "status": "success"
+    }
+}
